@@ -1,16 +1,27 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 const miles2kilometes = 1.6
 
 func main() {
-	var miles float64
-	fmt.Print("enter miles:")
-	_, err := fmt.Scanf("%v", &miles)
-	if err != nil {
-		fmt.Println(err)
+	i := 10
+goolakh:
+	for i = 0; i <= 10; i++ {
+		continue
+		switch i {
+		case 2:
+			fmt.Println("42")
+			break goolakh
+		case 43:
+			fmt.Println("43")
+
+		}
 	}
-	kilomete := miles2kilometes * miles
-	fmt.Println(miles, " is equal to ", kilomete)
+	for i = 2; i < 5; i++ {
+		fmt.Println(i)
+	}
+	fmt.Println("hello")
 }
